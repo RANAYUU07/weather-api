@@ -1,0 +1,198 @@
+/* next job make change the background color of the temp and fill in the boxes. */
+
+
+body{
+    background: linear-gradient(to right, #38bdf8, #3b82f6,  #2563eb);
+    padding: none;
+    margin: none;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.glass-box{
+    background: rgba(255, 255, 255, 0.2);
+    width: 1300px;
+    border-radius: 12px;
+    height: 600px;
+}
+
+#intro{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+
+
+nav{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+input{
+    width: 100vh;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 40px;               /* make space for the icon */
+    border: none;
+    background: url("pngtree-magnifying-glass-line-icon-png-image_6619181.png") no-repeat 10px center;
+    background-size: 20px 20px;       /* resize the icon */
+    background-color: azure;
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+    
+}
+
+button{
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    width: 80px;
+   margin: none;
+   font-size: large;
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+}
+
+#weather-info{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: transparent;
+    font-size: xx-large;
+    font-weight: bolder;
+    background-color: rgb(107, 106, 106);
+    border-radius: 7px;
+    width: 30px;
+    display: inline;
+    
+}
+
+#description{
+    text-transform: capitalize;
+}
+
+#city-name{
+    font-size: xx-large;
+}
+
+#weather_icon{
+    vertical-align: middle;
+    height: 30px;
+    width: 30px;
+}
+
+.rainy{
+     background: url(rain.gif);
+    background-size: cover;
+    background-color: transparent;
+}
+
+.clouds{
+    background: url(clouds.gif);
+    background-color: transparent;
+    background-size: cover;
+}
+
+.sunny{
+    background: url(sunny.gif);
+    background-color: transparent;
+    background-size: cover;
+}
+
+.snow{
+    background: url(49358.gif);
+    background-color: transparent;
+    background-size: cover;
+}
+
+.clear{
+     background: url(giphy.webp);
+    background-color: transparent;
+    background-size: cover;
+}
+
+.haze{
+    background: url(haze.gif);
+    background-color: transparent;
+    background-size: cover;
+}
+
+.gridboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* First row - 2 columns */
+.row1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center; /* center the 2 boxes */
+}
+
+.row1 div {
+    background: rgb(247, 248, 249);
+    padding: 40px;
+    text-align: center;
+}
+
+/* Second row - 3 columns */
+.row2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.row2 div {
+    background: rgb(243, 241, 241);
+    padding: 40px;
+    text-align: center;
+}
+
+
+.appear{
+    display: none;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.icon{
+    display: inline-block;
+}

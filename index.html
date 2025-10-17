@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="hello">
+    <div class="head">
+        <h1>Weather Now </h1>
+        <p>Get real time weather information for any city.</p>
+    </div>
+    <div class="glass-box">
+        <div class="container">
+            <nav>
+                <div class="input-container">
+                    <input type="text" id="city-input" placeholder="Enter the name of the city">
+                    <button id="get-weather-btn">Search</button>
+                </div>
+            </nav>
+            <div id="weather-info" class="hidden"> 
+                <!-- We will keep toggling the hidden class based on when we want the info to disaplay or when we don't. -->
+                <p id="temperature"></p>
+                <p id="description">  <img id="weather_icon" alt="cant render the icon" class="hidden"></p>
+            </div>
+            
+            <br>
+            <br>
+            <p id="error-message" class="hidden">City not found. Please try again.</p> 
+            <!-- // Same logic as above, the error will be toggled by our will. -->
+        </div>
+        <div class="appear" id="visible">
+            <div class="gridboxes">
+                <div class="row1" >
+                    <div class="box1" id="first">Box 1</div>
+                    <div class="box2" id="second">Box 2</div>
+                </div>
+                <br>
+                <div class="row2">
+                    <div class="box3" id="third">Box 3</div>
+                    <div class="box4" id="fourth">Box 4</div>
+                    <div class="box5" id="fifth">Box 5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <p id="intro">Write the name of the country or city you want the weather of in the above search bar</p> -->
+    <script src="script.js"></script>
+</body>
+</html>
